@@ -1,3 +1,18 @@
+## My Implementation
+
+This repository contains my numerical implementation and reproduction of the theoretical results presented in Phys. Rev. A 105, 063706.
+
+The implementation includes:
+
+- Biphoton spectral function
+- Cavity transfer function
+- Multiplexed spectral functions
+- Schmidt decomposition
+- Entanglement entropy calculation
+- Single-photon purity calculation
+- Numerical visualization of the joint spectral amplitude
+
+
 # Two-Photons-Entanglement Reference
 
 # Summary of PhysRevA.105.063706 and Key Considerations for Numerical Simulation
