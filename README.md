@@ -42,7 +42,7 @@ If you are writing a program, such as Python, MATLAB, or Julia, to simulate the 
 
 The original biphoton spectral function $f(\omega_s,\omega_i)$ is defined as:
 
-\(f(\omega_s,\omega_i)=\frac{e^{-(\Delta\omega_s+\Delta\omega_i)^2\tau^2/8}}{\frac{\Gamma_3^N}{2}-i\Delta\omega_i}\)
+$\(f(\omega_s,\omega_i)=\frac{e^{-(\Delta\omega_s+\Delta\omega_i)^2\tau^2/8}}{\frac{\Gamma_3^N}{2}-i\Delta\omega_i}\)$
 
 #### Simulation Considerations
 
@@ -54,7 +54,7 @@ The original biphoton spectral function $f(\omega_s,\omega_i)$ is defined as:
 
 The lossless transfer function of a single-sided cavity is:
 
-\(C_t(\Delta\omega,\Gamma_c)=\frac{\Gamma_c+i2\Delta\omega}{\Gamma_c-i2\Delta\omega}\)
+$\(C_t(\Delta\omega,\Gamma_c)=\frac{\Gamma_c+i2\Delta\omega}{\Gamma_c-i2\Delta\omega}\)$
 
 #### Simulation Considerations
 
@@ -94,7 +94,7 @@ Construct the spectral matrix $F_{j,k}=f_{\mathrm{MP}}(\omega_{s,j},\omega_{i,k}
 
 The correlation kernel is:
 
-\(K_1(\omega,\omega')=\int f_{\mathrm{MP}}(\omega,\omega_1)f_{\mathrm{MP}}^*(\omega',\omega_1)d\omega_1\)
+$\(K_1(\omega,\omega')=\int f_{\mathrm{MP}}(\omega,\omega_1)f_{\mathrm{MP}}^*(\omega',\omega_1)d\omega_1\)$
 
 In numerical calculations, this corresponds approximately to the matrix multiplication $K_1=FF^\dagger d\omega_i$, where $F^\dagger$ denotes the conjugate transpose of $F$.
 
@@ -112,7 +112,7 @@ If $F=U\Sigma V^\dagger$, then the squared singular values $\sigma_n^2$ correspo
 
 * **Entanglement Entropy:** The entanglement entropy is calculated as:
 
-\(S=-\sum_n\lambda_n\log_2(\lambda_n)\)
+$\(S=-\sum_n\lambda_n\log_2(\lambda_n)\)$
 
 In numerical calculations, when $\lambda_n\rightarrow0$, evaluating $\log_2(0)$ produces numerical errors such as `NaN` or `Inf`.
 
@@ -120,11 +120,11 @@ Therefore, a small cutoff should be applied. For example, only include terms sat
 
 * **Purity:** The single-photon purity is given by:
 
-\(\mathrm{Purity}=\sum_n\lambda_n^2\)
+$\(\mathrm{Purity}=\sum_n\lambda_n^2\)$
 
 Equivalently, for the reduced density matrix:
 
-\(\mathrm{Purity}=\mathrm{Tr}(\rho_i^2)\)
+$\(\mathrm{Purity}=\mathrm{Tr}(\rho_i^2)\)$
 
 ### 5. Recursive Relationship for the Number of Ensembles
 
